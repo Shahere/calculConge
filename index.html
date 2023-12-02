@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Apizee Congés</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form id="submitForm">
+        <div class="startContainer">
+            <label for="start">Date de début : </label>
+            <input type="date" id="start" name="trip-start" value="" />
+        </div>
+        <p></p>
+        <div class="endContainer">
+            <label for="end">Date actuelle ou prévisionnelle : </label>
+            <input type="date" id="end" name="trip-end" value="" />
+        </div>
+        <p></p>
+        <div class="congePris">
+            <label for="conge">Nb congé pris : </label>
+            <input type="text" id="conge" name="text-conge" value="" />
+        </div>
+        <p></p>
+        <button type="submit" class="btn btn-primary">Valider</button>
+    </form>
+
+    <div class="congT" style="display: flex;">
+        <p>Congés totaux : </p>
+        <p id="congeTot" style="font-weight: bold;"></p>
+    </div>
+
+    <div class="congR" style="display: flex;">
+        <p>Congés restants : </p>
+        <p id="congeRes" style="font-weight: bold;"></p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
